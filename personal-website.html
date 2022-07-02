@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="codepacks.css">
+    <link rel="shortcut icon" type="image/jpg" href="akash.png">
+    <title>Personal Website</title>
+  </head>
+  <body class="grad">
+    <h2>Step One</h2>
+      <p><a href="personal-website.zip" download>Download Personal Website .zip</a> and save to desktop</p>
+    <h2>Step Two</h2>
+      <p>Double click .zip file to open contents of personal-website folder</p>
+    <h2>Step Three</h2>
+      <p>Download a code editor. In this tutorial, I'll use <a href="https://atom.io/" target="_blank" rel="noopener noreferer">Atom</a> </p>
+    <h2>Step Four</h2>
+      <div class="parent">
+        <ul>
+          <li>Find a photograph of yourself, rename it to myphotograph.jpeg, drag it into the personal-website folder, and replace the current image</li>
+          <li>Download your resume as a pdf, name it resume.pdf, drag it into the personal-website folder, and replace the current file</li>
+          <li>Download any impressive document you have as a pdf, rename it document.pdf, drag it into the personal-website folder, and replace the current file.
+            If you don't have a file you want to add, we can replace this section with your Twitter page in Step Five. If you don't want the section at all, delete
+            line 20 in index.html in Step Five.</li>
+        </ul>
+      </div>
+    <h2>Step Five</h2>
+      <div class="parent">
+        <ul>
+          <li>Open index.html and make changes to commented section</li>
+          <li>If you don't want to include a document, you can replace this section with your Twitter account. To do this, go to line 20 of index.html and change the
+          href="document.pdf" to your Twitter account URL, e.g. href="https://twitter.com/JeromeBerkshire". Then, also on line 20, change src="econ.png" to
+          src="twitter.png".</li>
+        </ul>
+      </div>
+    <h2>Step Six</h2>
+      <p>Open style.css and make changes to commented section</p>
+    <h2>Step Seven</h2>
+    <div class="parent">
+      <ul>
+        <li>Create a <a href="https://hub.docker.com/" target="_blank" rel="noopener noreferer">dockerhub account</a> and create a <a href="https://hub.docker.com/repositories" target="_blank" rel="noopener noreferer">public repository</a> named personal-website</li>
+        <li>Download the <a href="https://docs.docker.com/desktop/mac/install/" target="_blank" rel="noopener noreferer">Docker desktop app</a> and sign in with the same information as your dockerhub account</li>
+      </ul>
+    </div>
+    <h2>Step Eight</h2>
+      <div class="parent">
+        <ul>
+          <li>Open up your command line tool. For Mac, this is Terminal.</li>
+          <li>Change directories into your personal-website folder. The command is: cd desktop/personal-website</li>
+          <li>Execute Command: docker build -t personal-website:1.0 .</li>
+          <li>Execute Command: docker tag personal-website:1.0 dockerhubusername/personal-website:1.0</li>
+          <li>Execute Command: docker push dockerhubusername/personal-website:1.0</li>
+        </ul>
+      </div>
+    <h2>Step Nine</h2>
+    <div class="parent">
+      <ul>
+        <li>Create a <a href="https://www.youtube.com/watch?v=8lwmAOaG6LE&t=1087s" target="_blank" rel="noopener noreferer">Keplr Wallet</a></li>
+        <li>Download <a href="https://akashlytics.com/deploy" target="_blank" rel="noopener noreferer">Akashlytics</a>, import your Keplr mnemonic, and send 5.5 AKT to your wallet. If you have a restrictions on app downloads, you can solve that problem with the command <a href="https://macpaw.com/how-to/allow-apps-anywhere#:~:text=In%20Terminal%2C%20type%20the%20code,apps%20to%20be%20downloaded%20from" target="_blank">sudo spctl --master-disable</a></li>
+        <li>Create a new certificate</li>
+        <li>Create a new deployment</li>
+        <li id="end">Select hello-world manifest, change the image tag to dockerhubusername/personal-website:1.0, and adjust price (uakt) if necessary</li>
+      </ul>
+    </div>
+  </body>
+</html>

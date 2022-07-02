@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="codepacks.css">
+    <link rel="shortcut icon" type="image/jpg" href="akash.png">
+    <title>Blog</title>
+  </head>
+  <body class="grad">
+    <h2>Step One</h2>
+      <p><a href="blog.zip" download>blog.zip</a> and save to desktop</p>
+    <h2>Step Two</h2>
+      <p>Double click .zip file to open contents of blog folder</p>
+    <h2>Step Three</h2>
+      <p>Download a code editor. In this tutorial, I'll use <a href="https://atom.io/" target="_blank" rel="noopener noreferer">Atom</a> </p>
+    <h2>Step Four</h2>
+      <p>Open index.html and make changes to commented sections</p>
+    <h2>Step Five</h2>
+      <p>Open post1.html through post6.html to make changes to posts</p>
+    <h2>Step Six</h2>
+    <div class="parent">
+      <ul>
+        <li>Create a <a href="https://hub.docker.com/" target="_blank" rel="noopener noreferer">dockerhub account</a> and create a <a href="https://hub.docker.com/repositories" target="_blank" rel="noopener noreferer">public repository</a> named blog</li>
+        <li>Download the <a href="https://docs.docker.com/desktop/mac/install/" target="_blank" rel="noopener noreferer">Docker desktop app</a> and sign in with the same information as your dockerhub account</li>
+      </ul>
+    </div>
+    <h2>Step Seven</h2>
+      <div class="parent">
+        <ul>
+          <li>Open up your command line tool. For Mac, this is Terminal.</li>
+          <li>Change directories into your blog folder. The command is: cd desktop/blog</li>
+          <li>Execute Command: docker build -t blog:1.0 .</li>
+          <li>Execute Command: docker tag blog:1.0 dockerhubusername/blog:1.0</li>
+          <li>Execute Command: docker push dockerhubusername/blog:1.0</li>
+        </ul>
+      </div>
+    <h2>Step Eight</h2>
+    <div class="parent">
+      <ul>
+        <li>Create a <a href="https://www.youtube.com/watch?v=8lwmAOaG6LE&t=1087s" target="_blank" rel="noopener noreferer">Keplr Wallet</a></li>
+        <li>Download <a href="https://akashlytics.com/deploy" target="_blank" rel="noopener noreferer">Akashlytics</a>, import your Keplr mnemonic, and send 5.5 AKT to your wallet. If you have a restrictions on app downloads, you can solve that problem with the command <a href="https://macpaw.com/how-to/allow-apps-anywhere#:~:text=In%20Terminal%2C%20type%20the%20code,apps%20to%20be%20downloaded%20from" target="_blank" rel="noopener noreferer">sudo spctl --master-disable</a></li>
+        <li>Create a new certificate</li>
+        <li>Create a new deployment</li>
+        <li id="end">Select hello-world manifest, change the image tag to dockerhubusername/blog:1.0, and adjust price (uakt) to 500</li>
+      </ul>
+    </div>
+  </body>
+</html>
