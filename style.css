@@ -1,14 +1,12 @@
-*.-webkit-media-controls-start-playback-button {
+*:-webkit-media-controls-start-playback-button {
   display: none!important;
   -webkit-appearance: none;
 }
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
-
 }
 .showcase{
     position: absolute;
@@ -32,14 +30,11 @@
     z-index: 1000;
     display: flex;
 }
-
 .logo {
     text-transform: uppercase;
     cursor: pointer;
     padding-right: 3vw;
 }
-
-
 .showcase video{
     position: absolute;
     top: 0;
@@ -123,7 +118,6 @@ td {
   transition: 0.2s;
   text-decoration: none;
 }
-
 .social
 {
   position: absolute;
@@ -134,7 +128,6 @@ td {
   align-items: center;
   font-size: 1vw;
 }
-
 .social a
 {
   display: inline-block;
@@ -144,7 +137,6 @@ td {
 a:visited {
     text-decoration: none;
 }
-
 a {
     text-decoration: none;
     color: white;
