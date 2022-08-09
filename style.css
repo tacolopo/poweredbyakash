@@ -118,6 +118,10 @@ td {
   transition: 0.2s;
   text-decoration: none;
 }
+.git {
+  width: 2vw;
+  height: auto;
+}
 .social
 {
   position: absolute;
